@@ -1,7 +1,5 @@
-# powershell-script1
+# powershell-script1 --# TOP PROCESSES BY ACTIVE TCP CONNECTIONS
 
-
-# TOP PROCESSES BY ACTIVE TCP CONNECTIONS" -ForegroundColor Yellow
 
 
 Get-NetTCPConnection |
