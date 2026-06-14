@@ -1,11 +1,11 @@
-# powershell-script1 --# TOP PROCESSES BY ACTIVE TCP CONNECTIONS
+# powershell-script1  TOP PROCESSES BY ACTIVE TCP CONNECTIONS
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Get-NetTCPConnection |
 Group-Object OwningProcess |
 ForEach-Object {
-
     $proc = Get-Process -Id $_.Name -ErrorAction SilentlyContinue
 
     [PSCustomObject]@{
